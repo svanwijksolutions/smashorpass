@@ -92,9 +92,13 @@
           <p class="info-body" data-i18n="contact.phone_note">One tap and you are calling the counter.</p>
           <p class="info-body" data-i18n="contact.wa_note">Send your order to us as a message.</p>
           <div class="info-actions">
-            <a class="btn btn-primary" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
+            <a class="btn btn-order" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" data-order-link target="_blank" rel="noopener">
+              <svg aria-hidden="true" focusable="false"><use href="#ic-bag"></use></svg>
+              <span data-i18n="order.primary">Order now</span>
+            </a>
+            <a class="btn btn-line" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
               <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
-              <span data-i18n="nav.order">Order now</span>
+              <span data-i18n="nav.call">Call</span>
             </a>
             <a class="btn btn-wa" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
               <svg aria-hidden="true" focusable="false"><use href="#ic-wa"></use></svg>
@@ -130,12 +134,16 @@
       <img class="order-badge" src="assets/images/logo.svg" width="132" height="132" alt="" aria-hidden="true" loading="lazy">
       <h2 class="order-title" data-i18n="order.title">Two ways to order</h2>
       <p class="order-text" data-i18n="order.text">Call the counter or send us a WhatsApp message. We are open every day from 13:00 to 23:00.</p>
+      <a class="btn btn-order btn-lg btn-pulse order-primary" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" data-order-link target="_blank" rel="noopener">
+        <svg aria-hidden="true" focusable="false"><use href="#ic-bag"></use></svg>
+        <span data-i18n="order.primary">Order now</span>
+      </a>
       <div class="order-actions">
-        <a class="btn btn-primary btn-lg btn-pulse" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
+        <a class="btn btn-line" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
           <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
-          <span data-i18n="order.call">Order now</span>
+          <span data-i18n="nav.call">Call</span>
         </a>
-        <a class="btn btn-wa btn-lg" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
+        <a class="btn btn-wa" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
           <svg aria-hidden="true" focusable="false"><use href="#ic-wa"></use></svg>
           <span data-i18n="order.wa">Order via WhatsApp</span>
         </a>

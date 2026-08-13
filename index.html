@@ -41,6 +41,7 @@
   <section class="hero">
     <span class="aurora" aria-hidden="true"></span>
     <span class="halftone" aria-hidden="true"></span>
+    <span class="grain" aria-hidden="true"></span>
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <p class="eyebrow fade-up" data-i18n="hero.eyebrow">Novalja &middot; Island of Pag</p>
@@ -51,15 +52,21 @@
         <p class="hero-answer fade-up l1" data-i18n="hero.answer">We always say smash.</p>
         <p class="hero-lead fade-up l2" data-i18n="hero.lead">Smash burgers with two patties, loaded fries and tortillas right in the middle of Novalja. Cheddar on every burger, six sauces and seven toppings to choose from.</p>
         <div class="hero-actions fade-up l2">
-          <a class="btn btn-primary btn-lg btn-pulse" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
-            <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
-            <span data-i18n="nav.order">Order now</span>
+          <a class="btn btn-order btn-lg btn-pulse" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" data-order-link target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false"><use href="#ic-bag"></use></svg>
+            <span data-i18n="order.primary">Order now</span>
           </a>
-          <a class="btn btn-wa btn-lg" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
-            <svg aria-hidden="true" focusable="false"><use href="#ic-wa"></use></svg>
-            <span data-i18n="nav.whatsapp">Order via WhatsApp</span>
-          </a>
-          <a class="btn btn-ghost btn-lg" href="menu.html" data-i18n="hero.cta_menu">View the menu</a>
+          <div class="hero-actions-sec">
+            <a class="btn btn-line" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
+              <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
+              <span data-i18n="nav.call">Call</span>
+            </a>
+            <a class="btn btn-wa" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
+              <svg aria-hidden="true" focusable="false"><use href="#ic-wa"></use></svg>
+              <span data-i18n="nav.whatsapp">Order via WhatsApp</span>
+            </a>
+            <a class="btn btn-ghost" href="menu.html" data-i18n="hero.cta_menu">View the menu</a>
+          </div>
         </div>
         <div class="hero-meta fade-up l3">
           <span class="open-pill">
@@ -76,13 +83,30 @@
       </div>
 
       <div class="hero-media fade-up l2">
-        <div class="media-frame ratio-4x5">
-          <img src="assets/images/smash-burger-wrapped.jpg" width="1206" height="1481" alt="A wrapped smash burger from SmashorPass, held up in front of the counter" data-i18n-attr="alt:hero.photo_alt" fetchpriority="high">
+        <div class="hero-media-inner" data-parallax>
+          <div class="media-frame ratio-4x5 has-steam">
+            <img class="kenburns" src="assets/images/smash-burger-wrapped.jpg" width="1206" height="1481" alt="A wrapped smash burger from SmashorPass, held up in front of the counter" data-i18n-attr="alt:hero.photo_alt" fetchpriority="high">
+            <span class="steam" aria-hidden="true">
+              <svg viewBox="0 0 120 150" preserveAspectRatio="none" focusable="false">
+                <path class="wisp w1" d="M34 148 C24 120 44 108 34 82 C26 58 42 44 34 16" fill="none" stroke="rgba(242,233,216,.55)" stroke-width="7" stroke-linecap="round"/>
+                <path class="wisp w2" d="M62 150 C52 122 72 110 62 84 C54 60 70 44 62 18" fill="none" stroke="rgba(242,233,216,.5)" stroke-width="8" stroke-linecap="round"/>
+                <path class="wisp w3" d="M90 148 C80 122 100 108 90 82 C82 58 98 44 90 14" fill="none" stroke="rgba(242,233,216,.5)" stroke-width="7" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+          <img class="hero-badge" src="assets/images/logo.svg" width="104" height="104" alt="" aria-hidden="true">
         </div>
-        <img class="hero-badge" src="assets/images/logo.svg" width="104" height="104" alt="" aria-hidden="true">
       </div>
     </div>
   </section>
+
+  <!-- ============================ MARQUEE TICKER ============================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-part">SMASH OR PASS<i>&bull;</i>SMASHED FLAVOR. ZERO FILTER.<i>&bull;</i>CRISP EDGES. JUICY INSIDE.<i>&bull;</i>DOUBLE PATTY. ALWAYS CHEDDAR.<i>&bull;</i></span>
+      <span class="marquee-part">SMASH OR PASS<i>&bull;</i>SMASHED FLAVOR. ZERO FILTER.<i>&bull;</i>CRISP EDGES. JUICY INSIDE.<i>&bull;</i>DOUBLE PATTY. ALWAYS CHEDDAR.<i>&bull;</i></span>
+    </div>
+  </div>
 
   <!-- ============================ INFO STRIP ============================ -->
   <section class="strip" aria-label="Practical information">
@@ -258,8 +282,15 @@
     <span class="halftone" aria-hidden="true"></span>
     <div class="wrap spotlight-grid">
       <div class="reveal">
-        <div class="media-frame ratio-4x5">
+        <div class="media-frame ratio-4x5 has-steam">
           <img src="assets/images/jalapeno-smash-promo.jpg" width="1206" height="1484" alt="Jalapeno Smash cut in half and held in gloved hands" data-i18n-attr="alt:spot.photo_alt" loading="lazy">
+          <span class="steam" aria-hidden="true">
+            <svg viewBox="0 0 120 150" preserveAspectRatio="none" focusable="false">
+              <path class="wisp w1" d="M34 148 C24 120 44 108 34 82 C26 58 42 44 34 16" fill="none" stroke="rgba(242,233,216,.5)" stroke-width="7" stroke-linecap="round"/>
+              <path class="wisp w2" d="M62 150 C52 122 72 110 62 84 C54 60 70 44 62 18" fill="none" stroke="rgba(242,233,216,.46)" stroke-width="8" stroke-linecap="round"/>
+              <path class="wisp w3" d="M90 148 C80 122 100 108 90 82 C82 58 98 44 90 14" fill="none" stroke="rgba(242,233,216,.46)" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+          </span>
         </div>
       </div>
       <div class="reveal d1">
@@ -269,10 +300,14 @@
         <p class="spot-sub">SMASH</p>
         <p class="spot-price">11&euro;</p>
         <p class="section-lead" style="margin-bottom:1.6rem" data-i18n="spot.text">Hot sauce, cheddar, jalape&ntilde;o and onion on two smashed patties. Order this one if you like some heat with your burger.</p>
-        <div class="hero-actions" style="margin-bottom:0">
-          <a class="btn btn-primary" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
+        <div class="btn-row">
+          <a class="btn btn-order" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" data-order-link target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false"><use href="#ic-bag"></use></svg>
+            <span data-i18n="order.primary">Order now</span>
+          </a>
+          <a class="btn btn-line" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
             <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
-            <span data-i18n="spot.cta">Order this one</span>
+            <span data-i18n="nav.call">Call</span>
           </a>
           <a class="btn btn-ghost" href="menu.html" data-i18n="hero.cta_menu">View the menu</a>
         </div>
@@ -300,12 +335,16 @@
       <p class="eyebrow" data-i18n="order.eyebrow">Ordering</p>
       <h2 class="order-title" data-i18n="order.title">Two ways to order</h2>
       <p class="order-text" data-i18n="order.text">Call the counter or send us a WhatsApp message. We are open every day from 13:00 to 23:00.</p>
+      <a class="btn btn-order btn-lg btn-pulse order-primary" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" data-order-link target="_blank" rel="noopener">
+        <svg aria-hidden="true" focusable="false"><use href="#ic-bag"></use></svg>
+        <span data-i18n="order.primary">Order now</span>
+      </a>
       <div class="order-actions">
-        <a class="btn btn-primary btn-lg btn-pulse" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
+        <a class="btn btn-line" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
           <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
-          <span data-i18n="order.call">Order now</span>
+          <span data-i18n="nav.call">Call</span>
         </a>
-        <a class="btn btn-wa btn-lg" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
+        <a class="btn btn-wa" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
           <svg aria-hidden="true" focusable="false"><use href="#ic-wa"></use></svg>
           <span data-i18n="order.wa">Order via WhatsApp</span>
         </a>

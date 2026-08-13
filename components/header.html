@@ -67,6 +67,10 @@
   <symbol id="ic-chev" viewBox="0 0 12 12">
     <path d="M2 4.2 6 8.2 10 4.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
+  <symbol id="ic-bag" viewBox="0 0 24 24">
+    <path d="M6.2 8h11.6l-.9 11.6a2.2 2.2 0 0 1-2.2 2H9.3a2.2 2.2 0 0 1-2.2-2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+    <path d="M8.7 8.6a3.3 3.3 0 0 1 6.6 0" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+  </symbol>
 </svg>
 
 <header class="site-header" id="siteHeader">
@@ -81,39 +85,39 @@
       <a class="nav-link" href="menu.html" data-nav="menu" data-i18n="nav.menu">Menu</a>
       <a class="nav-link" href="contact.html" data-nav="contact" data-i18n="nav.contact">Location</a>
 
-      <a class="btn btn-wa nav-mobile-only" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
-        <svg aria-hidden="true" focusable="false"><use href="#ic-wa"></use></svg>
-        <span data-i18n="nav.whatsapp">Order via WhatsApp</span>
-      </a>
-
-      <div class="mobile-lang">
-        <p class="mobile-lang-title" data-i18n="nav.lang_label">Language</p>
-        <div class="mobile-lang-grid" role="group" aria-label="Choose a language" data-i18n-attr="aria-label:nav.lang_aria">
-          <button type="button" class="lang-option" data-lang="hr"><svg class="flag" aria-hidden="true" focusable="false"><use href="#flag-hr"></use></svg><span>Hrvatski</span></button>
-          <button type="button" class="lang-option" data-lang="en"><svg class="flag" aria-hidden="true" focusable="false"><use href="#flag-en"></use></svg><span>English</span></button>
-          <button type="button" class="lang-option" data-lang="it"><svg class="flag" aria-hidden="true" focusable="false"><use href="#flag-it"></use></svg><span>Italiano</span></button>
-          <button type="button" class="lang-option" data-lang="de"><svg class="flag" aria-hidden="true" focusable="false"><use href="#flag-de"></use></svg><span>Deutsch</span></button>
-          <button type="button" class="lang-option" data-lang="es"><svg class="flag" aria-hidden="true" focusable="false"><use href="#flag-es"></use></svg><span>Espa&ntilde;ol</span></button>
-          <button type="button" class="lang-option" data-lang="nl"><svg class="flag" aria-hidden="true" focusable="false"><use href="#flag-nl"></use></svg><span>Nederlands</span></button>
-        </div>
+      <div class="nav-order">
+        <a class="btn btn-order" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" data-order-link target="_blank" rel="noopener">
+          <svg aria-hidden="true" focusable="false"><use href="#ic-bag"></use></svg>
+          <span data-i18n="order.primary">Order now</span>
+        </a>
+        <a class="btn btn-line" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
+          <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
+          <span><span data-i18n="nav.call">Call</span>&nbsp;091&nbsp;360&nbsp;9999</span>
+        </a>
+        <a class="btn btn-wa" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" target="_blank" rel="noopener">
+          <svg aria-hidden="true" focusable="false"><use href="#ic-wa"></use></svg>
+          <span data-i18n="nav.whatsapp">Order via WhatsApp</span>
+        </a>
       </div>
     </nav>
 
     <div class="header-actions">
-      <a class="icon-link" href="https://www.instagram.com/smashorpasshr" target="_blank" rel="noopener" aria-label="SmashorPass on Instagram" data-i18n-attr="aria-label:nav.instagram_aria">
+      <a class="icon-link only-desktop" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
+        <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
+      </a>
+      <a class="icon-link only-desktop" href="https://www.instagram.com/smashorpasshr" target="_blank" rel="noopener" aria-label="SmashorPass on Instagram" data-i18n-attr="aria-label:nav.instagram_aria">
         <svg aria-hidden="true" focusable="false"><use href="#ic-ig"></use></svg>
       </a>
 
-      <a class="btn btn-primary header-order" href="tel:+385913609999" aria-label="Order by phone: 091 360 9999" data-i18n-attr="aria-label:nav.order_aria">
-        <svg aria-hidden="true" focusable="false"><use href="#ic-phone"></use></svg>
-        <span data-i18n="nav.order">Order now</span>
-        <span class="order-num">091&nbsp;360&nbsp;9999</span>
+      <a class="btn btn-order header-order only-desktop" href="https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94" data-order-link target="_blank" rel="noopener">
+        <svg aria-hidden="true" focusable="false"><use href="#ic-bag"></use></svg>
+        <span data-i18n="order.primary">Order now</span>
       </a>
 
       <div class="lang" id="langWrap">
         <button type="button" class="lang-btn" id="langBtn" aria-expanded="false" aria-haspopup="true" aria-label="Choose a language" data-i18n-attr="aria-label:nav.lang_aria">
           <svg class="flag" id="langFlag" aria-hidden="true" focusable="false"><use href="#flag-en" id="langFlagUse"></use></svg>
-          <span id="langCode">EN</span>
+          <span id="langLabel">English</span>
           <svg class="chev" aria-hidden="true" focusable="false"><use href="#ic-chev"></use></svg>
         </button>
         <div class="lang-menu" id="langMenu" role="menu">
