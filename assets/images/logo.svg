@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="sopTitle">
+  <title id="sopTitle">SmashorPass Novalja</title>
+  <defs>
+    <clipPath id="sopDisc"><circle cx="200" cy="200" r="200"/></clipPath>
+  </defs>
+
+  <!-- cream badge -->
+  <circle cx="200" cy="200" r="200" fill="#F4EBDA"/>
+
+  <g clip-path="url(#sopDisc)">
+    <!-- broken outline ring -->
+    <g fill="none" stroke="#141110" stroke-width="4.4" stroke-linecap="round">
+      <path d="M158.87 35.05 A170 170 0 0 0 158.87 364.95"/>
+      <path d="M241.13 364.95 A170 170 0 0 0 241.13 35.05"/>
+    </g>
+
+    <!-- crown -->
+    <g fill="#C9822F">
+      <path d="M163 56 L169 20 L184 40 L200 12 L216 40 L231 20 L237 56 Z"/>
+      <circle cx="169" cy="17" r="4.6"/>
+      <circle cx="200" cy="9" r="5"/>
+      <circle cx="231" cy="17" r="4.6"/>
+    </g>
+    <g stroke="#C9822F" stroke-width="5" stroke-linecap="round">
+      <path d="M130 44 L143 39"/>
+      <path d="M126 56 L136 54"/>
+      <path d="M270 39 L257 44"/>
+      <path d="M274 56 L264 54"/>
+    </g>
+
+    <!-- burger -->
+    <g stroke="#171210" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round">
+      <!-- bottom bun -->
+      <path d="M117 160 C132 184 162 195 200 195 C238 195 268 184 283 160 C292 178 266 202 200 202 C134 202 108 178 117 160 Z" fill="#DE9A55"/>
+      <!-- beef patty, craggy -->
+      <path d="M103 141 C119 131 135 147 151 138 C167 129 183 147 201 140 C219 133 235 149 253 142 C271 135 288 147 300 139 C304 157 292 175 275 177 C257 179 239 171 221 175 C203 179 185 172 167 175 C149 178 128 175 114 167 C104 161 100 151 103 141 Z" fill="#4A2B1A"/>
+      <!-- melted cheddar with drips -->
+      <path d="M105 124 L297 115 L297 137 C284 147 279 167 264 165 C252 163 253 145 240 147 C228 149 231 170 216 170 C204 170 202 149 190 151 C178 153 179 172 164 170 C152 168 155 146 142 147 C130 148 124 159 113 153 Z" fill="#EDA928"/>
+      <!-- sauce band -->
+      <path d="M110 106 C142 124 176 116 210 124 C244 132 270 120 292 106 L292 118 C268 133 240 142 208 137 C174 132 140 138 110 120 Z" fill="#DE8348"/>
+      <!-- pickle slices -->
+      <ellipse cx="152" cy="115" rx="18" ry="9" fill="#7E8E3E"/>
+      <ellipse cx="199" cy="120" rx="19" ry="9.5" fill="#7E8E3E"/>
+      <ellipse cx="246" cy="112" rx="17" ry="8.5" fill="#7E8E3E"/>
+      <!-- top bun -->
+      <path d="M111 111 C111 43 291 43 291 111 Z" fill="#E5A25C"/>
+    </g>
+    <g fill="#F8E9CB">
+      <ellipse cx="147" cy="86" rx="6.4" ry="3.6" transform="rotate(-16 147 86)"/>
+      <ellipse cx="178" cy="70" rx="6.4" ry="3.6" transform="rotate(-10 178 70)"/>
+      <ellipse cx="211" cy="66" rx="6.4" ry="3.6" transform="rotate(6 211 66)"/>
+      <ellipse cx="243" cy="76" rx="6.4" ry="3.6" transform="rotate(14 243 76)"/>
+      <ellipse cx="166" cy="99" rx="6" ry="3.4" transform="rotate(-8 166 99)"/>
+      <ellipse cx="200" cy="92" rx="6" ry="3.4"/>
+      <ellipse cx="234" cy="97" rx="6" ry="3.4" transform="rotate(10 234 97)"/>
+      <ellipse cx="266" cy="97" rx="5.6" ry="3.2" transform="rotate(22 266 97)"/>
+      <ellipse cx="130" cy="102" rx="5.6" ry="3.2" transform="rotate(-24 130 102)"/>
+    </g>
+    <g fill="#5E6B2C">
+      <circle cx="147" cy="114" r="1.7"/><circle cx="157" cy="117" r="1.7"/>
+      <circle cx="194" cy="119" r="1.8"/><circle cx="205" cy="122" r="1.8"/>
+      <circle cx="242" cy="111" r="1.6"/><circle cx="251" cy="114" r="1.6"/>
+    </g>
+
+    <!-- side taglines -->
+    <g fill="#C9822F" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="10" text-anchor="middle" lengthAdjust="spacingAndGlyphs">
+      <text x="72" y="128" textLength="52">SMASHED</text>
+      <text x="72" y="141" textLength="46">FLAVOR.</text>
+      <text x="72" y="154" textLength="60">ZERO FILTER.</text>
+      <text x="334" y="128" textLength="54">CRISP EDGES.</text>
+      <text x="334" y="141" textLength="54">JUICY INSIDE.</text>
+      <text x="334" y="154" textLength="50">EVERY TIME.</text>
+    </g>
+
+    <!-- wordmark -->
+    <text x="200" y="242" text-anchor="middle" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="88" fill="#141110" textLength="328" lengthAdjust="spacingAndGlyphs">SMASH</text>
+    <g stroke="#C9822F" stroke-width="4.6" stroke-linecap="round">
+      <path d="M120 259 L166 262"/>
+      <path d="M234 262 L280 259"/>
+    </g>
+    <text x="200" y="270" text-anchor="middle" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="26" fill="#C9822F" textLength="46" lengthAdjust="spacingAndGlyphs">OR</text>
+    <text x="216" y="332" text-anchor="middle" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="89" fill="#8B2A2A" textLength="246" lengthAdjust="spacingAndGlyphs">PASS</text>
+
+    <g stroke="#C9822F" stroke-width="3.4" stroke-linecap="round">
+      <path d="M126 350 L138 348"/>
+      <path d="M288 348 L300 350"/>
+    </g>
+    <text x="213" y="355" text-anchor="middle" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="18" fill="#141110" textLength="139" lengthAdjust="spacingAndGlyphs">SMASH BURGER</text>
+  </g>
+</svg>

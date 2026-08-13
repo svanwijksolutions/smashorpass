@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="sopcTitle">
+  <title id="sopcTitle">SmashorPass Novalja</title>
+  <defs>
+    <clipPath id="sopcDisc"><circle cx="200" cy="200" r="200"/></clipPath>
+  </defs>
+
+  <circle cx="200" cy="200" r="200" fill="#F4EBDA"/>
+
+  <g clip-path="url(#sopcDisc)">
+    <g fill="none" stroke="#141110" stroke-width="5.6" stroke-linecap="round">
+      <path d="M158.87 35.05 A170 170 0 0 0 158.87 364.95"/>
+      <path d="M241.13 364.95 A170 170 0 0 0 241.13 35.05"/>
+    </g>
+
+    <g fill="#C9822F">
+      <path d="M163 56 L169 20 L184 40 L200 12 L216 40 L231 20 L237 56 Z"/>
+      <circle cx="169" cy="17" r="4.6"/>
+      <circle cx="200" cy="9" r="5"/>
+      <circle cx="231" cy="17" r="4.6"/>
+    </g>
+
+    <g stroke="#171210" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M117 160 C132 184 162 195 200 195 C238 195 268 184 283 160 C292 178 266 202 200 202 C134 202 108 178 117 160 Z" fill="#DE9A55"/>
+      <path d="M103 141 C119 131 135 147 151 138 C167 129 183 147 201 140 C219 133 235 149 253 142 C271 135 288 147 300 139 C304 157 292 175 275 177 C257 179 239 171 221 175 C203 179 185 172 167 175 C149 178 128 175 114 167 C104 161 100 151 103 141 Z" fill="#4A2B1A"/>
+      <path d="M105 124 L297 115 L297 137 C284 147 279 167 264 165 C252 163 253 145 240 147 C228 149 231 170 216 170 C204 170 202 149 190 151 C178 153 179 172 164 170 C152 168 155 146 142 147 C130 148 124 159 113 153 Z" fill="#EDA928"/>
+      <path d="M110 106 C142 124 176 116 210 124 C244 132 270 120 292 106 L292 118 C268 133 240 142 208 137 C174 132 140 138 110 120 Z" fill="#DE8348"/>
+      <ellipse cx="152" cy="115" rx="18" ry="9" fill="#7E8E3E"/>
+      <ellipse cx="199" cy="120" rx="19" ry="9.5" fill="#7E8E3E"/>
+      <ellipse cx="246" cy="112" rx="17" ry="8.5" fill="#7E8E3E"/>
+      <path d="M111 111 C111 43 291 43 291 111 Z" fill="#E5A25C"/>
+    </g>
+    <g fill="#F8E9CB">
+      <ellipse cx="147" cy="86" rx="6.8" ry="3.8" transform="rotate(-16 147 86)"/>
+      <ellipse cx="178" cy="70" rx="6.8" ry="3.8" transform="rotate(-10 178 70)"/>
+      <ellipse cx="211" cy="66" rx="6.8" ry="3.8" transform="rotate(6 211 66)"/>
+      <ellipse cx="243" cy="76" rx="6.8" ry="3.8" transform="rotate(14 243 76)"/>
+      <ellipse cx="166" cy="99" rx="6.4" ry="3.6" transform="rotate(-8 166 99)"/>
+      <ellipse cx="200" cy="92" rx="6.4" ry="3.6"/>
+      <ellipse cx="234" cy="97" rx="6.4" ry="3.6" transform="rotate(10 234 97)"/>
+    </g>
+
+    <text x="200" y="248" text-anchor="middle" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="94" fill="#141110" textLength="344" lengthAdjust="spacingAndGlyphs">SMASH</text>
+    <g stroke="#C9822F" stroke-width="5.4" stroke-linecap="round">
+      <path d="M112 268 L162 271"/>
+      <path d="M238 271 L288 268"/>
+    </g>
+    <text x="200" y="280" text-anchor="middle" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="30" fill="#C9822F" textLength="54" lengthAdjust="spacingAndGlyphs">OR</text>
+    <text x="212" y="352" text-anchor="middle" font-family="'Archivo Black','Arial Black',Impact,Helvetica,Arial,sans-serif" font-weight="900" font-size="96" fill="#8B2A2A" textLength="268" lengthAdjust="spacingAndGlyphs">PASS</text>
+  </g>
+</svg>

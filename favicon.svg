@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="SmashorPass">
+  <circle cx="200" cy="200" r="200" fill="#141110"/>
+  <circle cx="200" cy="200" r="176" fill="#F4EBDA"/>
+  <g fill="#C9822F">
+    <path d="M148 84 L157 30 L180 60 L200 18 L220 60 L243 30 L252 84 Z"/>
+  </g>
+  <g stroke="#171210" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M96 262 C116 296 158 312 200 312 C242 312 284 296 304 262 C316 292 278 330 200 330 C122 330 84 292 96 262 Z" fill="#DE9A55"/>
+    <path d="M78 232 C102 218 126 242 150 228 C174 214 198 242 224 231 C250 220 274 244 300 233 C326 222 336 240 342 230 C348 258 330 286 304 289 C278 292 250 280 222 286 C194 292 166 281 138 286 C110 291 80 286 60 274 C46 265 74 246 78 232 Z" fill="#4A2B1A"/>
+    <path d="M76 206 L328 194 L328 226 C310 240 302 268 282 265 C264 262 266 236 248 239 C231 242 235 271 214 271 C197 271 194 242 178 245 C161 248 163 274 142 271 C125 268 129 237 111 239 C94 241 86 256 71 248 Z" fill="#EDA928"/>
+    <ellipse cx="140" cy="188" rx="30" ry="15" fill="#7E8E3E"/>
+    <ellipse cx="206" cy="194" rx="31" ry="15.5" fill="#7E8E3E"/>
+    <ellipse cx="272" cy="184" rx="28" ry="14" fill="#7E8E3E"/>
+    <path d="M78 180 C78 82 322 82 322 180 Z" fill="#E5A25C"/>
+  </g>
+  <g fill="#F8E9CB">
+    <ellipse cx="136" cy="146" rx="13" ry="7" transform="rotate(-16 136 146)"/>
+    <ellipse cx="186" cy="122" rx="13" ry="7" transform="rotate(-6 186 122)"/>
+    <ellipse cx="240" cy="130" rx="13" ry="7" transform="rotate(12 240 130)"/>
+    <ellipse cx="164" cy="166" rx="12" ry="6.5" transform="rotate(-8 164 166)"/>
+    <ellipse cx="216" cy="158" rx="12" ry="6.5"/>
+    <ellipse cx="276" cy="160" rx="11" ry="6" transform="rotate(20 276 160)"/>
+  </g>
+</svg>
