@@ -9,9 +9,18 @@
   'use strict';
 
   var LANGS = ['hr', 'en', 'it', 'de', 'es', 'nl'];
+  var NAMES = { hr: 'Hrvatski', en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands' };
   var FALLBACK = 'en';
   var KEY_LANG = 'sop-lang';
   var KEY_NOTICE = 'sop-notice';
+
+  /* -----------------------------------------------------------------
+     Ordering destination.
+     For now "Order here" opens the existing WhatsApp order chat.
+     NEXT ROUND: replace this single value with the real ordering /
+     payment service URL and every [data-order-link] button follows.
+     ----------------------------------------------------------------- */
+  var ORDER_URL = 'https://wa.me/385913609999?text=Hi%21%20I%27d%20like%20to%20order%20%F0%9F%8D%94';
 
   var dict = {};
   var base = {};
@@ -100,8 +109,8 @@
       }
     }
 
-    var code = $('#langCode');
-    if (code) code.textContent = current.toUpperCase();
+    var label = $('#langLabel');
+    if (label) label.textContent = NAMES[current] || current.toUpperCase();
     var flagUse = $('#langFlagUse');
     if (flagUse) {
       flagUse.setAttribute('href', '#flag-' + current);
@@ -238,6 +247,38 @@
     });
   }
 
+  /* ---------- order buttons (single central destination) ---------- */
+  function initOrderLinks() {
+    $$('[data-order-link]').forEach(function (a) {
+      a.setAttribute('href', ORDER_URL);
+    });
+  }
+
+  /* ---------- subtle scroll parallax (transform only) ---------- */
+  function initParallax() {
+    var els = $$('[data-parallax]');
+    if (!els.length) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var ticking = false;
+    function update() {
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      els.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        var centre = r.top + r.height / 2;
+        var ratio = (centre - vh / 2) / vh;
+        ratio = Math.max(-1, Math.min(1, ratio));
+        el.style.transform = 'translate3d(0,' + (ratio * -24).toFixed(1) + 'px,0)';
+      });
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+  }
+
   function initHeaderScroll() {
     var header = $('#siteHeader');
     if (!header) return;
@@ -310,10 +351,12 @@
       markCurrentPage();
       initMenu();
       initLangSwitcher();
+      initOrderLinks();
       initHeaderScroll();
       initCookie();
       initYear();
       initReveal();
+      initParallax();
       return initI18n();
     });
   }
