@@ -9,7 +9,6 @@
   "meta.privacy.desc": "How this website handles your data: only your language choice is kept in your own browser. No analytics, no advertising cookies and no visitor tracking.",
   "meta.nf.title": "Page not found | SmashorPass Novalja",
   "meta.nf.desc": "This page does not exist. Head back to the home page or go straight to the menu of SmashorPass in Novalja.",
-
   "nav.skip": "Skip to content",
   "nav.main_aria": "Main navigation",
   "nav.home": "Home",
@@ -24,23 +23,18 @@
   "nav.lang_label": "Language",
   "nav.lang_aria": "Choose a language",
   "nav.logo_alt": "Logo of SmashorPass Novalja",
-
   "hero.eyebrow": "Novalja · Island of Pag",
   "hero.answer": "We always say smash.",
   "hero.lead": "Smash burgers with two patties, loaded fries and tortillas right in the middle of Novalja. Cheddar on every burger, six sauces and seven toppings to choose from.",
   "hero.photo_alt": "A wrapped smash burger from SmashorPass, held up in front of the counter",
   "hero.open_now": "Open daily, 13:00 to 23:00",
   "hero.cta_menu": "View the menu",
-
   "rating.reviews": "reviews",
   "rating.aria": "Rated 4.7 out of 5, based on 145 Google reviews",
-  "rating.source": "Google reviews",
-
   "strip.hours_label": "Opening hours",
   "strip.hours_value": "Every day, 13:00 to 23:00",
   "strip.address_label": "Address",
   "strip.phone_label": "Order by phone",
-
   "usp.eyebrow": "The kitchen",
   "usp.title": "What makes us different?",
   "usp.lead": "Four things the counter is built on.",
@@ -49,7 +43,6 @@
   "usp.3": "Sauce made in-house",
   "usp.4": "Brioche buns",
   "usp.poster_alt": "SmashorPass poster listing fresh meat, local ingredients, house made sauce and brioche buns, next to a photo of a smash burger",
-
   "concept.eyebrow": "The counter",
   "concept.title": "What comes over the counter",
   "concept.c1.title": "Smash burgers",
@@ -64,24 +57,20 @@
   "concept.c4.title": "Fries and drinks",
   "concept.c4.text": "Loaded fries under melted cheddar, classic fries and cold drinks.",
   "concept.c4.price": "from 2,5€",
-
   "preview.eyebrow": "Smash burgers",
   "preview.title": "Four burgers, two patties each",
   "preview.lead": "Cheddar is included on every single one of them.",
   "preview.cta": "See the full menu",
-
   "spot.eyebrow": "Item in the spotlight",
   "spot.kicker": "Not for the mild.",
   "spot.text": "Hot sauce, cheddar, jalapeño and onion on two smashed patties. Order this one if you like some heat with your burger.",
   "spot.photo_alt": "Jalapeno Smash cut in half and held in gloved hands",
   "spot.cta": "Order this one",
-
   "order.eyebrow": "Ordering",
   "order.title": "Two ways to order",
   "order.text": "Call the counter or send us a WhatsApp message. We are open every day from 13:00 to 23:00.",
   "order.call": "Order now",
   "order.wa": "Order via WhatsApp",
-
   "find.eyebrow": "Novalja, Pag",
   "find.title": "Where to find us",
   "find.address_title": "Address",
@@ -91,7 +80,6 @@
   "find.more": "Location and contact",
   "find.insta": "Follow on Instagram",
   "find.country": "Croatia",
-
   "days.mon": "Monday",
   "days.tue": "Tuesday",
   "days.wed": "Wednesday",
@@ -100,7 +88,6 @@
   "days.sat": "Saturday",
   "days.sun": "Sunday",
   "hours.value": "13:00 to 23:00",
-
   "menu.eyebrow": "Menu",
   "menu.title": "The full menu",
   "menu.lead": "All prices in euro. Every smash burger comes with two patties and cheddar.",
@@ -121,7 +108,6 @@
   "menu.meat4": "4x meat",
   "menu.cta_title": "Hungry yet?",
   "menu.cta_text": "Call the counter or send a WhatsApp message. Open every day from 13:00 to 23:00.",
-
   "dish.hothoney": "Hot sauce, honey mustard sauce, cheddar, caramelised onion, tomato",
   "dish.bacondelight": "Classic sauce, cheddar, bacon, bacon jam, iceberg lettuce",
   "dish.jalapeno": "Hot sauce, cheddar, jalapeño, onion",
@@ -133,7 +119,6 @@
   "dish.hothoneyfries": "Hot sauce, honey mustard sauce, jalapeño, melted cheddar",
   "dish.sweetbaconfries": "Honey mustard sauce, bacon, bacon jam, melted cheddar",
   "dish.specialfries": "Special sauce, bacon, caramelised onion, melted cheddar",
-
   "opt.bbq": "BBQ sauce",
   "opt.classic": "Classic sauce",
   "opt.garlicmayo": "Garlic mayo",
@@ -147,7 +132,6 @@
   "opt.onion": "Onion",
   "opt.pickles": "Pickles",
   "opt.tomato": "Tomato",
-
   "contact.eyebrow": "Novalja, Pag",
   "contact.title": "Location and contact",
   "contact.lead": "You will find us at Ul. kneza Trpimira 19, in the centre of Novalja. Ordering goes by phone or WhatsApp, there is no online ordering system.",
@@ -157,12 +141,7 @@
   "contact.hours_note": "The same times seven days a week.",
   "contact.phone_title": "Phone",
   "contact.phone_note": "One tap and you are calling the counter.",
-  "contact.wa_title": "WhatsApp",
   "contact.wa_note": "Send your order to us as a message.",
-  "contact.insta_title": "Instagram",
-  "contact.insta_note": "Follow SmashorPass on Instagram.",
-  "contact.map_caption": "Illustration of the location, not a map",
-
   "privacy.title": "Privacy statement",
   "privacy.lead": "This website belongs to SmashorPass in Novalja. This page explains in plain words what the site does with your data.",
   "privacy.updated": "Last updated: August 2026",
@@ -178,18 +157,15 @@
   "privacy.s5.body": "The website runs on GitHub Pages. Like almost every web server, the hosting party can log technical request data such as an IP address. We have no access to those logs and we do not use them.",
   "privacy.s6.title": "Questions",
   "privacy.s6.body": "Do you have a question about this page? Call 091 360 9999 or just ask us at the counter at Ul. kneza Trpimira 19 in Novalja.",
-
   "nf.title": "This page has been eaten",
   "nf.text": "The page you were looking for is not here. The menu is still exactly where it should be.",
   "nf.home": "Back to the home page",
   "nf.menu": "View the menu",
-
   "footer.about": "Smash burgers, loaded fries and tortillas in the centre of Novalja on the island of Pag.",
   "footer.nav_title": "Pages",
   "footer.contact_title": "Contact",
   "footer.hours_title": "Opening hours",
   "footer.privacy": "Privacy statement",
-
   "cookie.text": "This website only stores your language choice in your own browser. No tracking and no advertising cookies.",
   "cookie.accept": "Understood",
   "cookie.more": "Privacy statement",

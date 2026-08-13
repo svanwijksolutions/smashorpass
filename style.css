@@ -354,7 +354,7 @@ body.menu-open .nav-toggle span::after{top:0;transform:rotate(-45deg)}
 .stars svg{width:17px;height:17px}
 .rating b{font-family:var(--font-display);font-size:1.02rem;color:var(--cream);letter-spacing:0}
 
-/* media frames — ready to swap in more photos later */
+/* media frames, ready to swap in more photos later */
 .media-frame{
   position:relative;overflow:hidden;border-radius:var(--radius-lg);
   border:1px solid var(--line-strong);

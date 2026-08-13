@@ -1,5 +1,5 @@
 /* ============================================================
-   SmashorPass Novalja — site script
+   SmashorPass Novalja, site script
    - injects header/footer
    - client side language switching (6 languages, English fallback)
    - mobile menu, language dropdown, header shrink, cookie notice
