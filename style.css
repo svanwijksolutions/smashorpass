@@ -178,6 +178,7 @@ ul{margin:0;padding:0;list-style:none}
 /* ============================================================
    Header
    ============================================================ */
+.svg-sprite{position:absolute;width:0;height:0;overflow:hidden}
 .site-header{
   position:sticky;top:0;z-index:var(--z-header);
   background:rgba(11,10,9,.72);
@@ -365,6 +366,7 @@ body.menu-open .nav-toggle span::after{top:0;transform:rotate(-45deg)}
 .ratio-4x5{aspect-ratio:4/5}
 .ratio-1x1{aspect-ratio:1/1}
 .ratio-3x2{aspect-ratio:3/2}
+.hero-copy{min-width:0}
 .hero-media{position:relative}
 .hero-media .media-frame{max-width:520px;margin-inline:auto}
 .hero-badge{
@@ -567,6 +569,23 @@ body.menu-open .nav-toggle span::after{top:0;transform:rotate(-45deg)}
   border:1px solid var(--line);background:var(--black-2);
 }
 .section-cream .info-card{background:rgba(255,255,255,.55);border-color:rgba(23,18,16,.12)}
+.info-extra{
+  display:flex;flex-direction:column;gap:.65rem;
+  padding:1rem 1.1rem;border-radius:12px;
+  border:1px dashed var(--line-strong);background:rgba(201,161,92,.06);
+}
+.section-cream .info-extra{border-color:rgba(139,42,42,.28);background:rgba(255,255,255,.5)}
+.info-quote{
+  font-family:var(--font-display);font-size:.92rem;line-height:1.4;
+  text-transform:uppercase;color:var(--gold);
+}
+.section-cream .info-quote{color:var(--bordeaux)}
+.info-rating{display:inline-flex;align-items:center;gap:.5rem;font-size:.92rem;color:var(--muted)}
+.on-cream .info-rating{color:rgba(23,18,16,.72)}
+.info-rating svg{width:17px;height:17px;flex:none;color:var(--gold)}
+.section-cream .info-rating svg{color:var(--bordeaux)}
+.info-rating b{font-family:var(--font-display);font-weight:400;color:var(--cream)}
+.on-cream .info-rating b{color:var(--ink)}
 .info-title{
   display:flex;align-items:center;gap:.7rem;
   font-family:var(--font-display);font-size:1.14rem;text-transform:uppercase;color:var(--gold);
@@ -719,8 +738,7 @@ body.cookie-open .wa-float{bottom:calc(6.6rem + env(safe-area-inset-bottom,0px))
 }
 
 @media (max-width:900px){
-  .hero-inner{grid-template-columns:1fr;gap:2.6rem}
-  .hero-media{order:-1}
+  .hero-inner{grid-template-columns:1fr;gap:2.4rem}
   .hero-media .media-frame{max-width:400px}
   .usp-grid,.spotlight-grid{grid-template-columns:1fr}
   .grid-4{grid-template-columns:repeat(2,1fr)}
@@ -758,12 +776,23 @@ body.cookie-open .wa-float{bottom:calc(6.6rem + env(safe-area-inset-bottom,0px))
   }
   body.menu-open .nav{transform:translateY(0);visibility:visible}
   body.menu-open{overflow:hidden}
+  /* backdrop-filter on the header would make it the containing block for the
+     fixed menu panel, so it is switched off while the menu is open */
+  body.menu-open .site-header{
+    background:var(--black);
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+    box-shadow:none;
+  }
+  body.menu-open .cookie{display:none}
+  /* logo and the call button stay usable on top of the open menu panel */
+  body.menu-open .brand,
+  body.menu-open .header-actions{position:relative;z-index:var(--z-toggle)}
   .nav-link{
     min-height:56px;padding:.9rem 1.1rem;border-radius:12px;
     font-family:var(--font-display);font-size:1.5rem;text-transform:uppercase;
     border-bottom:1px solid var(--line);
   }
-  .nav-link[aria-current="page"]::after{margin-left:auto}
   .nav-mobile-only{display:inline-flex;margin-top:1.2rem}
 
   .mobile-lang{display:block;margin-top:1.6rem}
@@ -804,6 +833,19 @@ body.cookie-open .wa-float{bottom:calc(6.6rem + env(safe-area-inset-bottom,0px))
   .hero-actions .btn,.order-actions .btn,.nf-actions .btn{width:100%}
   .hero-media .media-frame{max-width:100%}
   .hero-badge{width:84px;height:84px;bottom:-20px}
+}
+
+@media (max-width:360px){
+  /* keep the call button and the menu reachable on the narrowest phones,
+     Instagram stays available in the footer */
+  .header-actions .icon-link{display:none}
+  .header-order{padding:.55rem .8rem;font-size:.82rem}
+}
+
+@media (max-width:520px){
+  .brand-name{display:none}
+  .header-actions{gap:.35rem}
+  .header-order{padding:.6rem .95rem}
 }
 
 @media (max-width:480px){
