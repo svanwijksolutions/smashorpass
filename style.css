@@ -810,9 +810,6 @@ body.cookie-open .wa-float{bottom:calc(6.6rem + env(safe-area-inset-bottom,0px))
 @media (max-width:768px){
   body{font-size:16px}
   .strip-grid{grid-template-columns:1fr}
-  .menu-grid,.menu-grid.cols-4{grid-template-columns:1fr}
-  .drink-grid{grid-template-columns:1fr;gap:0}
-  .option-grid{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr;gap:2rem}
   .footer-about{max-width:none}
   .hero-title{font-size:clamp(2.9rem,13vw,4.6rem)}
@@ -825,6 +822,12 @@ body.cookie-open .wa-float{bottom:calc(6.6rem + env(safe-area-inset-bottom,0px))
   .footer-bottom>*{flex:1 1 0}
   .footer-bottom>*:nth-child(2){text-align:center}
   .footer-bottom>*:last-child{text-align:right}
+}
+
+@media (max-width:640px){
+  .menu-grid,.menu-grid.cols-4{grid-template-columns:1fr}
+  .drink-grid{grid-template-columns:1fr;gap:0}
+  .option-grid{grid-template-columns:1fr}
 }
 
 @media (max-width:600px){
